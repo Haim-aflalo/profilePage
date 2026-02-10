@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(177, 170, 235);
+  color: rgb(0, 0, 0);
+}
+
+header {
+  background-color: rgb(94, 183, 224);
+  text-align: center;
+  width: 100%;
+  height: 3rem;
+}
+
+.card-container {
+  margin-top: 5%;
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-auto-rows: 1fr;
+  justify-content: center;
+  justify-self: center;
+  gap: 1.5rem;
+}
+
+.card {
+  width: 25vw;
+  height: 30vh;
+  border: solid;
+  border-radius: 32px;
+  display: grid;
+  grid-template-rows: 10% 70% 20%;
+  grid-template-columns: 1.5fr 1fr;
+  background-color: rgb(90, 89, 105);
+}
+
+h4 {
+  grid-area: 1/1/2/3;
+  justify-self: center;
+  align-self: center;
+}
+
+img {
+  grid-area: 2/1/3/2;
+  width: 70%;
+  height: 80%;
+  border-radius: 5em;
+  justify-self: center;
+  align-self: center;
+}
+
+p {
+  grid-area: 2/2/3/3;
+  justify-self: center;
+  align-self: center;
+}
+
+button {
+  width: 20%;
+  height: 80%;
+  grid-area: 3/1/4/3;
+  justify-self: center;
+  align-self: center;
+  border-radius: 432px;
+}
+
+footer {
+  background-color: rgb(129, 30, 30);
+  height: 3rem;
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
